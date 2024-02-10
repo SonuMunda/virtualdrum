@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Drum</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="main">
+      <h1>Virtual Drum</h1>
+      <div class="container">
+        <div class="audio-box" data-key="kick">C Kick</div>
+        <div class="audio-box" data-key="snare">V Snare</div>
+        <div class="audio-box" data-key="hihat">B Hi Hat</div>
+        <div class="audio-box" data-key="tamb">X Tamb</div>
+        <div class="audio-box" data-key="tomb1">D Tomb1</div>
+        <div class="audio-box" data-key="tomb2">F Tomb2</div>
+        <div class="audio-box" data-key="clowbell">G Clowbell</div>
+        <div class="audio-box" data-key="crash1">S Crash1</div>
+        <div class="audio-box" data-key="crash2">H Crash2</div>
+        <div class="audio-box" data-key="crash3">J Crash3</div>
+      </div>
+    </section>
+
+    <audio src="./audio/80s-Kick.wav" id="kick" type="audio/wav"></audio>
+    <audio src="./audio/80s-SNARE1.wav" id="snare" type="audio/wav"></audio>
+    <audio src="./audio/80s-HHCLOSE1.wav" id="hihat" type="audio/wav"></audio>
+    <audio src="./audio/80s-TAMB1.wav" id="tamb" type="audio/wav"></audio>
+    <audio src="./audio/80s-TOM1.wav" id="tomb1" type="audio/wav"></audio>
+    <audio src="./audio/80s-TOM2.wav" id="tomb2" type="audio/wav"></audio>
+    <audio
+      src="./audio/80s-COWBELL1.wav"
+      id="clowbell"
+      type="audio/wav"
+    ></audio>
+    <audio src="./audio/80s-CRASH1.wav" id="crash1" type="audio/wav"></audio>
+    <audio src="./audio/80s-CRASH2.wav" id="crash2" type="audio/wav"></audio>
+    <audio src="./audio/80s-CRASH3.wav" id="crash3" type="audio/wav"></audio>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

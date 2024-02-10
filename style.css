@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #212121;
+  font-family: "Roboto", sans-serif;
+}
+
+.main h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.container {
+  background-color: #303030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 80%;
+  width: 80%;
+}
+
+.container .audio-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background-color: #424242;
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container .audio-box:hover {
+  background-color: #555;
+}
+
+.container .audio-box.active {
+  background-color: #f44336;
+}
+
+@media screen and (max-width: 1080px) {
+    .container{
+        padding: 1rem;
+        height: fit-content;
+    }
+  .container .audio-box{
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 420px){
+    .container .audio-box{
+        height: 100px;
+        width: 100px;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    
+}
